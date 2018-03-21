@@ -6,11 +6,11 @@
 	<package name="script"/>
     </packages>
   </test> 
-   <test name="TestOnChrome">
-  <parameter name="ip" value="localhost"/>
-  <parameter name="browser" value="chrome"/>
-    <packages>
-	<package name="script"/>
-    </packages>
-  </test> 
+<!--    <test name="TestOnChrome"> -->
+<!--   <parameter name="ip" value="localhost"/> -->
+<!--   <parameter name="browser" value="chrome"/> -->
+<!--     <packages> -->
+<!-- 	<package name="script"/> -->
+<!--     </packages> -->
+<!--   </test>  -->
 </suite>
