@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="tests">
-  <parameter name="ip" value="192.168.1.49"/>
-  <parameter name="browser" value="chrome"/>
-  <test name="TestOnChrome(failed)" parallel="tests">
-    <parameter name="ip" value="192.168.1.49"/>
-    <parameter name="browser" value="chrome"/>
+  <parameter name="ip" value="localhost"/>
+  <parameter name="browser" value="firefox"/>
+  <test name="TestOnFirefox(failed)" parallel="tests">
+    <parameter name="ip" value="localhost"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="script.CheckValidLogin">
         <methods>
           <include name="closeApplication"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
           <include name="openApplication"/>
           <include name="testValidLogin"/>
         </methods>
@@ -19,12 +17,10 @@
       <class name="script.InvalidLogin">
         <methods>
           <include name="closeApplication"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
           <include name="openApplication"/>
           <include name="testbInvalidLogin"/>
         </methods>
       </class> <!-- script.InvalidLogin -->
     </classes>
-  </test> <!-- TestOnChrome(failed) -->
+  </test> <!-- TestOnFirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
